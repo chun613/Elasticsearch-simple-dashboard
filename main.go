@@ -31,18 +31,8 @@ type Alias struct {
 }
 
 var (
-	tr              = &http.Transport{TLSClientConfig: &tls.Config{InsecureSkipVerify: true}}
-	client          = &http.Client{Transport: tr}
-	host            = "https://%s/api/v1/namespaces/high-memory-ha/services/elasticsearch-product-logging/proxy/"
-	devHost         = "api.dev.zwoop.xyz"
-	devUsername     = "admin"
-	devPwd          = "0fTQE8F1LtzrZYe6SFlDwQTYReRnkHAi"
-	london2Host     = "api.london-2.zwoop.xyz"
-	london2Username = "admin"
-	london2Pwd      = "KKfpTCY26Nlc6GjS3Fw834WBIFJYfhny"
-	devDubHost      = "api.dev-dub.zwoop.xyz"
-	devDubUsername  = "admin"
-	devDubPwd       = "rW8jSQfAVVCfyKocII9eJEhx5kJMP7Td"
+	tr     = &http.Transport{TLSClientConfig: &tls.Config{InsecureSkipVerify: true}}
+	client = &http.Client{Transport: tr}
 )
 
 func main() {
